@@ -31,7 +31,7 @@ public class Car {
         this.engineTemperature = engineTemperature;
     }
 
-    public void changeSpeed()
+    public void changeSpeed() //a function that randomly changes the speed field from 10 to 50
     {
         int maxSpeed = this.speed + 10, minSpeed = this.speed - 10;
 
@@ -49,21 +49,21 @@ public class Car {
         this.speed = random.nextInt(maxSpeed - minSpeed) + minSpeed;
     }
 
-    public void changeStaringWheelRadius()
+    public void changeStaringWheelRadius() //a function which randomly provided the speed and her self fields changes the value of the steeringWheelRadius field
     {
         Random random = new Random();
 
         int radius = ( (100 - speed) / 100 ) * random.nextInt(30) + 10;
 
-        steeringWheelRadius = random.nextInt(60) + steeringWheelRadius - 30;
+        this.steeringWheelRadius = random.nextInt(60) + this.steeringWheelRadius - 30;
     }
 
-    public void changeEngineTemperature()
+    public void changeEngineTemperature() // a function which randomly provided the speed field changes the value of the engineTemperature field
     {
         Random random = new Random();
 
-        int temperature = speed + 50 + ( random.nextInt(10) + 20 );
+        int temperature = this.speed + 50 + ( random.nextInt(10) + 20 );
 
-        engineTemperature = random.nextInt(speed) + temperature;
+        this.engineTemperature = random.nextInt(this.speed) + temperature;
     }
 }
