@@ -1,1 +1,1 @@
-# Zadanie_3_Ericcson
+Stwórz aplikację konsolową, która poprzez wyświetlanie logów w konsoli, będzie symulować w czasie rzeczywistym działanie komputera pokładowego samochodu, logującego podstawową telemetrię w trakcie jazdy (np. prędkość, promień skrętu kierownicy, temp. silnika itp.) z różnymi częstotliwościami próbkowania, na poziomie sekund. Postaraj się zaprezentować w swoim kodzie OOP. Zawrzyj w kodzie komentarze konieczne do zrozumienia Twojego konceptu.
